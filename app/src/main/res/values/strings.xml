@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">cursoKotlinAndroid</string>
+    <string name="app_Hint_Name">Name</string>
+    <string name="app_Hint_Age">Age</string>
 </resources>
