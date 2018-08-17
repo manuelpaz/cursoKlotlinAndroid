@@ -20,27 +20,28 @@ class MainActivity : AppCompatActivity(), TextWatcher {
 
     override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
         name = editName?.text.toString()
-        age = Integer.valueOf(editAge?.text.toString())
+        age = editAge?.text.toString()
+        if(name != "") textName?.text = name
+        if(age != "") textAge?.text = age
 
-        texName?.text= name
-        textAge?.text = age.toString()
         //Toast.makeText(this, p0.toString(), Toast.LENGTH_SHORT).show()
     }
 
     private var editName: EditText? = null
     private var editAge: EditText? = null
-    private var texName: TextView? = null
+    private var textName: TextView? = null
     private var textAge: TextView? = null
 
     private var name: String? = null
-    private var age = 0
+    private var age: String? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         editName = findViewById(R.id.editText_Name)
         editAge = findViewById(R.id.editText_Age)
-        texName = findViewById(R.id.textView_Name)
+        textName = findViewById(R.id.textView_Name)
         textAge = findViewById(R.id.textView_Age)
 
         editName!!.addTextChangedListener(this)
