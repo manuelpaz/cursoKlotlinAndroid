@@ -2,4 +2,6 @@
     <string name="app_name">cursoKotlinAndroid</string>
     <string name="app_Hint_Name">Name</string>
     <string name="app_Hint_Age">Age</string>
+    <string name="app_button">Ejecutar</string>
+    <string name="button">Button</string>
 </resources>
