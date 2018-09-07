@@ -29,10 +29,19 @@ class MainActivity : AppCompatActivity(), TextWatcher, View.OnClickListener {
     }
 
     private fun operacion(){
-        name = editName?.text.toString()
+
+        var cadena: String = ""
+        var entero: Int = 0
+        var doble: Double = 5.0
+        var valor: Boolean = true
+        var char: Char = 'k'
+        var f: Float = 5.2f
+
+
+        /*name = editName?.text.toString()
         age = editAge?.text.toString()
         if(name != "") textName?.text = name
-        if(age != "") textAge?.text = age
+        if(age != "") textAge?.text = age*/
     }
 
     private var editName: EditText? = null
