@@ -30,12 +30,19 @@ class MainActivity : AppCompatActivity(), TextWatcher, View.OnClickListener {
 
     private fun operacion(){
 
-        var cadena: String = ""
-        var entero: Int = 0
-        var doble: Double = 5.0
+        var cadena = ""
+        var entero = 0
+        /*var doble: Double = 5.0
         var valor: Boolean = true
         var char: Char = 'k'
-        var f: Float = 5.2f
+        var f: Float = 5.2f*/
+        val d = 4 //esto es una variable inmutable lo que quiere decir que no se le puede cambiar el valor
+
+        if(false){
+            entero = 5*5
+        }else{
+            cadena = "no tiene permiso"
+        }
 
 
         /*name = editName?.text.toString()
