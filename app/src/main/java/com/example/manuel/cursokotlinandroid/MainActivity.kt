@@ -33,21 +33,16 @@ class MainActivity : AppCompatActivity(), TextWatcher, View.OnClickListener {
         var entero = 0
         var valor1 = 7
         var valor2 = 3
+        var valor3 = false
 
-       valor2 += valor1 //Se suman los valores almacenados en las variables valor2 y valor1 y luego es asignado a la variable valor2 este es un operador de asignación aumentada
-
+        if(!valor3){ //se muestra el operador de negacion !
+            valor1%=valor2
+        }
         valor1 = 7
         valor2 = 3
-        valor2 -= valor1 //Se restan los valores almacenados en las variables valor2 y valor1 y luego es asignado a la variable valor2 este es un operador de asignación
-
-        valor1 = 7
-        valor2 = 3
-        valor2 *= valor1 //Se multiplican los valores almacenados en las variables valor2 y valor1 y luego es asignado a la variable valor2 este es un operador de asignación aumentada
-
-        valor1 = 7
-        valor2 = 3
-        valor1 %= valor2 //Se divide el valor de la variable valor1 entre el valor de la variable valor2 y el resto es asignado a la variable valor1
-
+        if(valor3.not()){ //Esta es la sobrecarga del operador de negacion
+            valor1%=valor2
+        }
 
         /*name = editName?.text.toString()
         age = editAge?.text.toString()
