@@ -31,23 +31,14 @@ class MainActivity : AppCompatActivity(), TextWatcher, View.OnClickListener {
     private fun operacion(){
 
         var entero = 0
-        val valor1 = 5
-        val valor2 = 6
+        var valor1 = 7
+        var valor2 = 3
 
-        entero = valor1 + valor2
-        entero = valor1.plus(valor2)
+        valor1++
+        valor1 = valor1.inc() //sobrecarga del operador incremento
 
-        entero = valor1 - valor2
-        entero = valor1.minus(valor2)
-
-        entero = valor1*valor2
-        entero = valor1.times(valor2)
-
-        entero = valor1/valor2
-        entero = valor2.div(valor1)
-
-        entero = valor2%valor1
-        entero = valor2.rem(valor1)
+        valor1--
+        valor1 = valor1.dec() //sobecarga del operador decremento
 
         /*name = editName?.text.toString()
         age = editAge?.text.toString()
